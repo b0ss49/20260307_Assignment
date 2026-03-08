@@ -1,0 +1,53 @@
+<div [formGroup]="loginForm">
+    <div class="row">
+        <div class="col-12 center-items">
+            <div class="col-6">
+                <h1 class="">Login</h1>
+                <div class="row mt-5 ">
+                    <mat-form-field appearance="fill">
+                        <mat-label>UserName</mat-label>
+                        <input formControlName="username" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="row ">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input [type]="'password'" formControlName="password" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col-6 left-items">
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <button matButton="filled" (click)="onSubmit()">Login</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <a class="link-highlight" (click)="onRegister()">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (showSuccessModal()) {
+  <div class="modal-backdrop" (click)="closeSuccessModal()">
+    <div class="modal-box modal-box--success" (click)="$event.stopPropagation()">
+      <h3>Login Successful!</h3>
+      <p>Welcome back! You are now logged in.</p>
+      <button matButton="filled" (click)="closeSuccessModal()">Continue</button>
+    </div>
+  </div>
+}
+
+@if (showErrorModal()) {
+  <div class="modal-backdrop" (click)="closeErrorModal()">
+    <div class="modal-box" (click)="$event.stopPropagation()">
+      <h3>Error</h3>
+      <p>{{ errorMessage() }}</p>
+      <button matButton="filled" (click)="closeErrorModal()">Close</button>
+    </div>
+  </div>
+}

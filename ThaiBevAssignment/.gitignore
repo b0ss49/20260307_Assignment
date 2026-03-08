@@ -1,0 +1,31 @@
+# .NET build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Debug symbols
+*.pdb
+*.mdb
+
+# VS internal
+.vs/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+
+# Test results
+TestResults/
+*.coverage
+*.opencover.xml
+
+# Publish output
+publish/

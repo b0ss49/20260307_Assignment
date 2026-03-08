@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.center-items {
+    text-align: -webkit-center;
+}
+
+.left-items {
+    text-align: -webkit-left;
+}
+
+.link-highlight {
+    color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+
+<div class="dashboard-container center-items">
+    <h1>{{ welcomeMessage() }}</h1>
+    <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+</div>
+
+@if (showUnauthModal()) {
+  <div class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-icon">&#9888;</div>
+      <h2 class="modal-title">Authentication Required</h2>
+      <p class="modal-message">User is not authenticated. Please log in to continue.</p>
+      <button mat-raised-button color="primary" (click)="goToLogin()">Go to Login</button>
+    </div>
+  </div>
+}

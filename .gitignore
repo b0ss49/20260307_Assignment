@@ -1,0 +1,79 @@
+# ========================
+# .NET / C#
+# ========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vs/
+*.rsuser
+*.pdb
+*.mdb
+*.opencover.xml
+*.coverage
+TestResults/
+publish/
+
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+packages/
+!**/packages/build/
+
+# ASP.NET
+wwwroot/
+
+# ========================
+# Angular / Node
+# ========================
+node_modules/
+dist/
+tmp/
+out-tsc/
+bazel-out/
+npm-debug.log
+yarn-error.log
+.angular/cache/
+.sass-cache/
+connect.lock
+coverage/
+libpeerconnection.log
+testem.log
+typings/
+__screenshots__/
+
+# ========================
+# IDEs & Editors
+# ========================
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+
+# VS Code (keep shared configs)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# ========================
+# OS & System
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Docker
+# ========================
+# Keep docker-compose and Dockerfiles tracked
